@@ -3,15 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import NavbarComp from './component/navigation/NavbarComp';
 import * as api from './services/api';
-import React, { useState } from 'react';
 
 function App() {
-  return (
-    <div className="App">
-      <NavbarComp/>
-    </div>
-  );
-}
 
   const [authenticated, setAuthenticated] = useState(false);
   const [username, setUsername] = useState();
@@ -53,5 +46,6 @@ function App() {
           )}
       </div>
   );
+}
 
 export default App;
